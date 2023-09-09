@@ -25,6 +25,6 @@ COPY ./poetry.lock ./pyproject.toml ./
 
 RUN poetry install --only main
 
-COPY . ./app
+COPY ./app ./app
 
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
