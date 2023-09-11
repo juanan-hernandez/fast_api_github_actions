@@ -19,5 +19,5 @@ async def read_user_me():
 
 @router.get("/users/{user_id}")
 async def read_user(user_id: uuid.UUID):
-    user = UserRepository('').get(user_id=user_id)
+    user = UserRepository("").get(user_id=user_id)
     return {"name": user.name, "nickname": user.nickname}

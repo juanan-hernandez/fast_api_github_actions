@@ -10,7 +10,6 @@ ModelType = TypeVar("ModelType", bound=BaseModel)
 
 
 class UserRepositoryInterface(BaseRepo[User]):
-
     def get(self, user_id: uuid.UUID) -> User:
         raise NotImplementedError
 

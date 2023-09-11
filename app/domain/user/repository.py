@@ -12,7 +12,7 @@ class UserRepository(UserRepositoryInterface):
         return User(id=user_id, name="Juan", nickname="juanan-hernandez")  # temporary
 
     def get_all(self, *args: Any, **kwargs: Any) -> Iterator[User]:
-        pass
+        raise NotImplementedError
 
     def add(self, entity: User) -> None:
         pass
